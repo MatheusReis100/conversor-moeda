@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border: 1px solid;
+}
+
+.container h2 {
+    margin: 20px 0;
+    color: dodgerblue;
+    border-bottom: 2px solid dodgerblue;
+    user-select: none;
+}
+
+.conversor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.moeda{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+    user-select: none;
+}
+
+.moeda label{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.moeda small{
+    font-size: 14px;
+}
+
+.moeda select{
+    width: 100%;
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 5px 0;
+}
+
+.moeda input{
+    width: 100%;
+    height: 25px;
+    margin-top: 5px;
+    padding: 15px 5px;
+    font-size: 16px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.button button {
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: dodgerblue;
+    background-color: dodgerblue;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all .3s;
+}
+
+.button button:first-child{
+    margin-right: 20px;
+}
+
+.button button:last-child{
+    width: 160px;
+}
+
+.button button:hover{
+    background-color: black;
+    color: dodgerblue;
+}
+
+.resultado{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-top: 20px;
+    user-select: none;
+}
+
+.resultado1{
+    width: 45%;
+    font-size: 15px;
+}
+
+.resultado2{
+    width: 55%;
+    font-size: 15px;
+    
+}

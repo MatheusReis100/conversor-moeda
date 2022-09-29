@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Moeda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Converta Aqui!</h2>
+        <div class="conversor">
+            <div class="moeda">
+            
+                <label for="moeda1">Primeira moeda</label>
+                <small>( Ex: Euro, Dólar, Real )</small>
+                <select name="" id="opcaoMoeda1">
+                    <option value="">Selecione a moeda</option>
+                    <option value="Dolar">Dolar (USD)</option>
+                    <option value="Euro">Euro</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Real">Real (BR)</option>
+                </select>
+                <input id="valorMoeda" type="number" placeholder="Insira o valor aqui !">
+            </div>
+
+            <div class="moeda">
+                <label for="moeda2">Segunda moeda</label>
+                <small>( Ex: Euro, Dólar, Real )</small>
+                <select name="" id="opcaoMoeda2">
+                    <option value="">Selecione a moeda</option>
+                    <option value="Dolar">Dolar (USD)</option>
+                    <option value="Euro">Euro</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Real">Real (BR)</option>
+                </select>
+            </div>
+            <div class="button">
+                <button id="btn">Converter</button>
+                <button id="limparMoeda">Limpar pesquisa</button>
+            </div>
+            <div class="resultado">
+                <div class="resultado1">
+                    <p>Conversão de:<span id="corversaoDe"></span></p>
+                    <br>
+                    <p>Valor convertido: <span id="valorConvertido"></span></p>
+                </div>
+
+                <div class="resultado2">
+                    <p>Para:<span id="conversaoPara"></span></p>
+                    <br>
+                    <p>Resultado da conversão: <span id="resultadoConversao"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="conversor.js"></script>
+</body>
+</html>
